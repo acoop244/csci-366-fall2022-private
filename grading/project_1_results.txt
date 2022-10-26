@@ -210,7 +210,7 @@ Expected equality of these values:
   the_machine->accumulator->value
     Which is: 20
   999
-[  FAILED  ] lmsm_machine_suite.test_smul_instruction_properly_caps_values (1 ms)
+[  FAILED  ] lmsm_machine_suite.test_smul_instruction_properly_caps_values (0 ms)
 [ RUN      ] lmsm_machine_suite.test_smul_instruction_enters_error_state_if_not_enough_elts
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/lmsm.cpp:316: Failure
 Expected equality of these values:
@@ -247,7 +247,7 @@ Expected equality of these values:
   the_machine->accumulator->value
     Which is: 22
   0
-[  FAILED  ] lmsm_machine_suite.test_return_instruction_returns_to_address_on_top_of_call_stack (0 ms)
+[  FAILED  ] lmsm_machine_suite.test_return_instruction_returns_to_address_on_top_of_call_stack (1 ms)
 [ RUN      ] lmsm_machine_suite.step_steps_to_the_next_instruction_and_executes_current
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/lmsm.cpp:388: Failure
 Expected equality of these values:
