@@ -1,9 +1,24 @@
 #include "gtest/gtest.h"
+#include <math.h>
+#include <stdio.h>
 
 char * print_binary_representation(unsigned int i, char *buffer){
     buffer[0] = '0';
     buffer[1] = 'b';
     // fill out remaining 32 bits, 1 or 0 depending on the value in the number i
+    long num = i;
+    if(num != -1) {
+        for (int count = 33; count > 1; count--) {
+            int remainder = num % 2;
+            buffer[count] = remainder + '0';
+            num = (num / 2);
+        }
+    }
+    else{
+        for (int count = 33; count > 1; count--) {
+            buffer[count] = '1';
+        }
+    }
     return buffer;
 }
 
@@ -37,20 +52,21 @@ struct Person {
     int age;
 };
 
-void set_my_age(struct Person p) {
-    p.age = 44;
+void set_my_age(struct Person *p) {
+    p->age = 44;
 }
 
 int get_my_age() {
     struct Person me;
     me.name = "Carson";
-    set_my_age(me);
+    set_my_age(&me);
     return me.age;
 }
 
 TEST(set_my_age, works) {
     EXPECT_EQ(44, get_my_age());
 }
+
 
 
 
