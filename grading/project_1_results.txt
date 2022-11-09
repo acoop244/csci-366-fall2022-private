@@ -85,7 +85,7 @@ Expected equality of these values:
     Which is: 2
   machine_status::STATUS_HALTED
     Which is: 1
-[  FAILED  ] lmsm_machine_suite.test_halt_instruction (1 ms)
+[  FAILED  ] lmsm_machine_suite.test_halt_instruction (0 ms)
 [ RUN      ] lmsm_machine_suite.test_load_immediate_instruction
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/lmsm.cpp:134: Failure
 Expected equality of these values:
@@ -134,7 +134,7 @@ Expected equality of these values:
   the_machine->accumulator->value
     Which is: 500
   999
-[  FAILED  ] lmsm_machine_suite.test_sadd_instruction_properly_caps_values (0 ms)
+[  FAILED  ] lmsm_machine_suite.test_sadd_instruction_properly_caps_values (1 ms)
 [ RUN      ] lmsm_machine_suite.test_sadd_instruction_enters_error_state_if_not_enough_elts
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/lmsm.cpp:204: Failure
 Expected equality of these values:
