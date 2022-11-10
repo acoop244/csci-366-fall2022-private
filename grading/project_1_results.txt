@@ -10,7 +10,7 @@ Expected equality of these values:
   the_machine->accumulator->value
     Which is: 1005
   999
-[  FAILED  ] lmsm_machine_suite.test_add_instruction_properly_caps_values (0 ms)
+[  FAILED  ] lmsm_machine_suite.test_add_instruction_properly_caps_values (1 ms)
 [ RUN      ] lmsm_machine_suite.test_sub_instruction_works
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/lmsm.cpp:29: Failure
 Expected equality of these values:
@@ -106,7 +106,7 @@ Expected equality of these values:
   the_machine->accumulator->value
     Which is: 10
   0
-[  FAILED  ] lmsm_machine_suite.test_pop_instruction_removes_top_of_stack (1 ms)
+[  FAILED  ] lmsm_machine_suite.test_pop_instruction_removes_top_of_stack (0 ms)
 [ RUN      ] lmsm_machine_suite.test_pop_instruction_enters_error_state_if_nothing_to_pop
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/lmsm.cpp:165: Failure
 Expected equality of these values:
