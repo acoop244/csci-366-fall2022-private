@@ -70,7 +70,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_UNKNOWN_INSTRUCTION
-    Which is: 0xaaaae04fa100
+    Which is: 0xaaaac3b6a100
 [  FAILED  ] parsing_tests.unknown_instruction_is_handled (0 ms)
 [ RUN      ] parsing_tests.no_argument_for_instruction_causes_error
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/assembler.cpp:127: Failure
@@ -78,7 +78,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_ARG_REQUIRED
-    Which is: 0xaaaae04fa118
+    Which is: 0xaaaac3b6a118
 [  FAILED  ] parsing_tests.no_argument_for_instruction_causes_error (0 ms)
 [ RUN      ] parsing_tests.numbers_out_of_machine_range_cause_error
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/assembler.cpp:134: Failure
@@ -86,7 +86,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_OUT_OF_RANGE
-    Which is: 0xaaaae04fa140
+    Which is: 0xaaaac3b6a140
 [  FAILED  ] parsing_tests.numbers_out_of_machine_range_cause_error (0 ms)
 [ RUN      ] parsing_tests.negative_numbers_out_of_machine_range_are_capped_properly
 /home/parallels/autograder/csci-366-fall2022/grading/scripts/repos/austin_coop/c/lmsm/googletest/assembler.cpp:141: Failure
@@ -94,7 +94,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_OUT_OF_RANGE
-    Which is: 0xaaaae04fa140
+    Which is: 0xaaaac3b6a140
 [  FAILED  ] parsing_tests.negative_numbers_out_of_machine_range_are_capped_properly (0 ms)
 [----------] 10 tests from parsing_tests (0 ms total)
 
@@ -280,7 +280,7 @@ Expected equality of these values:
   result->error
     Which is: NULL
   ASM_ERROR_BAD_LABEL
-    Which is: 0xaaaae04fa130
+    Which is: 0xaaaac3b6a130
 [  FAILED  ] code_generation.bad_label_causes_error (0 ms)
 [----------] 28 tests from code_generation (0 ms total)
 
@@ -305,7 +305,7 @@ Expected equality of these values:
 [ RUN      ] lmsm_machine_suite.test_add_instruction_properly_caps_values
 [       OK ] lmsm_machine_suite.test_add_instruction_properly_caps_values (0 ms)
 [ RUN      ] lmsm_machine_suite.test_sub_instruction_works
-[       OK ] lmsm_machine_suite.test_sub_instruction_works (1 ms)
+[       OK ] lmsm_machine_suite.test_sub_instruction_works (0 ms)
 [ RUN      ] lmsm_machine_suite.test_sub_instruction_properly_caps_values
 [       OK ] lmsm_machine_suite.test_sub_instruction_properly_caps_values (0 ms)
 [ RUN      ] lmsm_machine_suite.test_store_instruction_works
@@ -386,7 +386,7 @@ Expected equality of these values:
 [----------] 39 tests from lmsm_machine_suite (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 82 tests from 5 test suites ran. (2 ms total)
+[==========] 82 tests from 5 test suites ran. (1 ms total)
 [  PASSED  ] 42 tests.
 [  FAILED  ] 40 tests, listed below:
 [  FAILED  ] instruction_construction.make_instruction_basic_instruction_fields_are_set
