@@ -51,8 +51,6 @@ instruction * asm_make_instruction(char* type, char *label, char *label_referenc
     } else {
         new_instruction->offset = 0;
     }
-    // TODO - fill in number slots
-    // ALL INSTRUCTIONS 1 EXCEPT CALL (3) & PUSHI (2)
     if(strcmp("CALL", new_instruction->instruction) == 0){
         new_instruction->slots = 3;
     } else if(strcmp("SPUSHI", new_instruction->instruction) == 0){
@@ -201,14 +199,6 @@ void asm_parse_src(compilation_result * result, char * original_src){
 //======================================================
 
 void asm_gen_code_for_instruction(compilation_result  * result, instruction *instruction) {
-    //TODO - generate the machine code for the given instruction
-    //
-    // note that some instructions will take up multiple slots
-    //
-    // note that if the instruction has a label reference rather than a raw number reference
-    // you will need to look it up with `asm_find_label` and, if the label does not exist,
-    // report the error as ASM_ERROR_BAD_LABEL
-
     int value_for_instruction = instruction->value;
 
     if(instruction->label_reference != NULL){
