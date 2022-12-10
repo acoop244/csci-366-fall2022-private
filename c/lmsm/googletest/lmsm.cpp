@@ -384,7 +384,6 @@ TEST(lmsm_machine_suite,step_steps_to_the_next_instruction_and_executes_current)
     the_machine->memory[1] = 000; // HLT
 
     lmsm_step(the_machine); // should execute the 902 instruction and move to the next position
-
     ASSERT_EQ(the_machine->program_counter, 1); // should have bumped the pc
     ASSERT_EQ(the_machine->current_instruction, 902); // should have loaded the instruction from mem[0]
     ASSERT_STREQ(the_machine->output_buffer, "10 "); // should have executed the instruction (OUT)
